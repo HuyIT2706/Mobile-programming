@@ -1,0 +1,18 @@
+
+
+Câu 1: Mong muốn và định hướng của mình sau khi học xong môn học là:
+
+(+) Sau khi học xong môn học, mình mong muốn nắm vững kiến thức nền tảng và kỹ năng làm ra 1 app.
+
+(+) Định hướng mình sẽ phát triển một ứng dụng di động vào thời gian gần nhất.
+
+Câu 2:
+(+) Mình tin rằng lập trình di động sẽ tiếp tục phát triển mạnh trong 10 năm tới. vì các lý do:
+
+    (+)  Nhu cầu sử dụng smartphone ngày càng tăng, hầu như ai cũng dùng điện thoại thông minh để học tập, làm việc, giải trí, thanh toán...
+
+    (+)  Công nghệ mới như AI, AR/VR, IoT, 5G sẽ gắn liền với các ứng dụng di động, mở ra nhiều cơ hội mới.
+
+    (+   Các doanh nghiệp, dịch vụ đều cần ứng dụng di động để tiếp cận và chăm sóc khách hàng.
+
+    (+   Hệ sinh thái di động (android, ios) vẫn chiếm ưu thế toàn cầu, và sẽ còn phát triển thêm.
