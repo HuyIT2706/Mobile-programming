@@ -1,4 +1,4 @@
-package com.example.bt1
+package com.example.BaiTap_Tuan1.BaiTap_Tuan1.SourceCode
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -19,6 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -125,23 +126,25 @@ fun ProfileScreen() {
                             )
                         }
                     }
-                    
+
                     Spacer(modifier = Modifier.height(24.dp))
-                    
+
                     // Tên người dùng
                     Text(
-                        text = "Johan Smith",
+                        text = "Bùi Văn Huy",
                         fontSize = 24.sp,
-                        color = Color(0xFF333333)
+                        color = Color.Red
                     )
-                    
+
                     Spacer(modifier = Modifier.height(8.dp))
-                    
+
                     // Địa chỉ
                     Text(
-                        text = "California, USA",
+                        text = "Sinh viên công nghệ thông tin ",
                         fontSize = 18.sp,
-                        color = Color(0xFF666666)
+                        color = Color(0xFF666666),
+                        modifier = Modifier.width(800.dp),
+                        textAlign = TextAlign.Center
                     )
                 }
             }
