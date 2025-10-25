@@ -1,15 +1,6 @@
-package com.example.BaiTap_Tuan1.BaiTap_Tuan3.SourceCode
+package com.example.BaiTap_Tuan1.BaiTap_Tuan4
 
-
-
-
-import android.R
-import android.content.Intent
-import androidx.compose.ui.platform.LocalContext
-import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
+import com.example.BaiTap_Tuan1.R
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -27,18 +18,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            JetpackComposeOnboarding()
-        }
-    }
-}
 
 @Composable
-fun JetpackComposeOnboarding() {
+fun JetpackComposeOnboarding(
+    onNavigateToScreen2: () -> Unit
+) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -47,8 +31,13 @@ fun JetpackComposeOnboarding() {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        val context = LocalContext.current
-
+        Image(
+            painter = painterResource(R.drawable.jetpackcompose_logo),
+            contentDescription = "Logo jackpack compose",
+            modifier = Modifier
+                .size(150.dp)
+                .clip(RoundedCornerShape(12.dp))
+        )
 
         Spacer(modifier = Modifier.height(32.dp))
 
@@ -78,7 +67,7 @@ fun JetpackComposeOnboarding() {
         // Nút "I'm ready"
         Button(
             onClick = {
-                context.startActivity(Intent(context, MainBT2::class.java))
+                onNavigateToScreen2()
             },
             modifier = Modifier
                 .fillMaxWidth()
@@ -89,7 +78,7 @@ fun JetpackComposeOnboarding() {
             shape = RoundedCornerShape(28.dp)
         ) {
             Text(
-                text = "I'm ready",
+                text = "Push",
                 fontSize = 18.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.White
@@ -103,5 +92,7 @@ fun JetpackComposeOnboarding() {
 @Preview(showBackground = true)
 @Composable
 fun JetpackComposeOnboardingPreview() {
-    JetpackComposeOnboarding()
+    JetpackComposeOnboarding(
+        onNavigateToScreen2 = {}
+    )
 }
